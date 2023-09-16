@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Thasadith:wght@400;700&display=swap');
+
+:root {
+    /*COLOR HUNT: site que disponibiliza paletas de cores*/
+    /*aqui, definimos as cores usadas, para quando quisermos mudar uma cor,
+     para não mudar por toda parte do código, mudamos aqui e a cor muda em 
+      todos locais que ela é usada*/
+    --cor-de-fundo: rgb(0, 0, 37);
+    --cor-fonte: #FFFFFF;
+    --cor-fonte-hover: #b28314b0;
+    --cor-link-hover:rgb(0, 92, 252);
+    --cor-azul-claro: #22D4FD;
+    --cor-rodape: #0040d5;
+    --cor-sophia: #a64dff;
+    --cor-sophia-sombra: #9143e0;
+    --cor-ciza-claro: #c3c3c3;
+    --cor-bordas: #125564;
+    --cor-rodape-background: #002885;
+    --cor-rodape-font: #37bef8;
+    --cor-shadow-curriculo: #2d6cff;
+    --cor-shadow-curriculo-hover: #22D4FD;
+    --cor-shadow-sophia: #2767ff;
+    --cor-span:  #93fd22;
+
+    --fonte-primaria: 'Thasadith', sans-serif;
+    --fonte-secundaria: 'Montserrat+Alternates', sans-serif;
+}
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color:var(--cor-fonte);
+}
+
+.cabecalho {
+    padding: 5% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display:flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-azul-claro);
+    text-decoration: none;
+}
+.cabecalho__menu__link:hover{
+    color: var(--cor-hover);
+    text-shadow: 4px 4px 6px var(--cor-azul-claro);
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 2%;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.destaque-titulo {
+    color: var(--cor-azul-claro);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+span {
+    color: var(--cor-azul-claro);
+}
+
+.hugo__link {
+    text-decoration: none;
+    box-shadow: var(--cor-rosa);
+    color: #FFFFFF;
+}
+
+.hugo__link:hover {
+   /* color: var(--cor-azul-claro);*/
+    text-shadow: 0.1em 0.1em 0.2em var(--cor-shadow-curriculo);
+    text-decoration: underline;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__links__navegacao {
+    /* background-color:#1d006d; coloca um background nos botões */
+    display:flex;/* alinhamento dos botoes da pagina*/
+    justify-content: center;/*alinha o texto e imagem dos botoes ao centro */
+    gap: 2px;/*define um espaco entre a imagem e o texto dos botoes*/
+    border: 2px solid var(--cor-bordas);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-ciza-claro);
+    font-family: var(--fonte-primaria);
+}
+.apresentacao__links__navegacao:hover{
+background-color: var(--cor-fonte-hover);
+color: var(--cor-hover-font);
+} 
+
+.apresentacao__imagem {
+    width: 50%;
+}
+
+.rodape{
+    padding: 12px;
+    text-align: center;
+    color:var(--cor-rodape-font);
+    background-color:var(--cor-rodape-background);
+    font: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+}
+
+
+/*SOBRE MIM*/
+
+.sophia{
+    color: var(--cor-sophia);
+    text-shadow: var(--cor-sophia-sombra) 0.2em 0.2em 0.4em;
+
+}
+.foto__sophia{
+      box-shadow: 4px 4px 4px 4px #37bef8;
+      width: 50%;
+}
+
+.alura {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-azul-claro);
+    text-decoration: none;
+}
+.alura:hover{
+    color: var(--cor-fonte-hover);
+}
+
+.curriculo__sobre__mim{
+    text-decoration: none ;
+    color: var(--cor-rosa);
+    text-shadow:1px 2.5px 5px var(--cor-shadow-curriculo);
+}
+.curriculo__sobre__mim:hover{
+    color: var(--cor-rosa);
+    text-shadow:2px 5px 10px var(--cor-shadow-curriculo-hover);
+}
+
+
+.esmeralda{
+   position: fixed;
+   object-position: bottom;
+}
+
+
+/*CURRICULO*/
+
+.apresentacao__cabecalho__curriculo {
+    margin-bottom: 30px;
+    /*padding: 20px;*/
+    font-family: var(--fonte-primaria);
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: var(--cor-hover-font);
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.2em var(--cor-shadow-curriculo);
+}
+
+.apresentacao__curriculo__destaques{
+    padding-top: 45px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 2.1875;
+}
+
+.apresentacao__curriculo__trabalhos {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--cor-azul-claro);
+}
+span {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color:var(--cor-azul-claro);
+}
+
+@media (max-width: 1370px) {
+    /*Essa estilização altera o comportamento da pagina 
+    em displays menores de 1370px.*/
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
